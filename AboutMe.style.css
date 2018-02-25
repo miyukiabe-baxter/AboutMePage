@@ -1,0 +1,475 @@
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: rgba(123, 124, 124, 0.3);
+	transition: all 1s ease;
+	font-size: 20px;
+}
+
+.headforall {
+/*	display: flex;
+	justify-content: space-between;*/
+	background-color: #ffffdd;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+.entiresitehead{
+	padding:0px 20px;
+}
+
+.dropdown {
+	display: none;
+}
+
+.headtitle{
+	margin-top: 20px;
+}
+
+.navheader{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+li, li a {
+  	display: inline-block;
+    padding: 10px;
+    color: black;
+}
+
+li a:hover{
+	color: red;
+}
+
+h1{
+   font-size: 3.5em;
+}
+
+h2 {
+  background-color: #FF0066;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 2em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+h3{
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4{
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.slide, .Home {
+/*	max-width: 100%; */
+	height: 800px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+ 
+.Home {
+	background-image: url("../AboutMe_Business/images/AboutMe2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../AboutMe_Business/images/AboutMe2.jpg");
+	background-image: webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../AboutMe_Business/images/AboutMe2.jpg");
+	background: moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../AboutMe_Business/images/AboutMe2.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+	background-size: cover;
+	background-attachment: fixed;
+  justify-content: center;
+}
+
+.slide {
+  padding-top: 40px;
+
+}
+
+.color-offwhite{
+    background-color: rgb(241, 239, 240);
+}
+
+.color-orange{
+	background-color: rgba(244, 191, 66, 0.3);
+}
+
+.color-darkgrey {
+	background-color: rgba(83, 86, 100, 0.5);
+}
+
+
+.color-lightblue{
+	background-color: rgba(13, 134, 186, 0.2);
+
+}
+
+.color-lightgreen{
+	background-color: rgba(13, 198, 54, 0.2);
+}
+
+
+/*below is typing*/
+
+.typewriter h1 {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .35em; /* Adjust as needed */
+  animation: 
+  	typing 3s steps(30, end), 
+  	blink-caret .5s step-end infinite;
+}
+
+
+/*About Me Section */
+/*
+img.mySlides {
+  max-width: 450px;
+  height: auto;
+  display: block;
+}*/
+
+.ProfilePics {
+    background-color: white;
+    padding: 2%;
+    transition: transform 0.75s ease;
+}
+
+.ProfilePics p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.TopRotate {
+    transform:translateX(-50px) translateY(60px) rotate(3deg);
+}
+
+.MiddleRotate {
+    transform:translateX(200px) translateY(-60px);
+}
+
+.BottomRotate {
+    transform:translateX(-60px) translateY(-180px) rotate(-3deg);
+}
+
+.ProfilePics:hover {
+  z-index: 1;
+}
+
+.TopRotate:hover {
+    transform:translateX(-50px) translateY(100px) rotate(0deg) scale(1.35);
+}
+
+.MiddleRotate:hover {
+    transform:translateX(100px) translateY(-60px) scale(1.35);
+}
+
+.BottomRotate:hover {
+    transform:translateX(-60px) translateY(-300px) rotate(0deg) scale(1.35);
+}
+
+
+
+img.ZoomPic {
+  max-width: 300px;
+  height: auto;
+  display: block;
+
+}
+
+
+.col-6 {
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+/*  background: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);*/
+}
+
+.col-6 h3{
+  color: black;
+}
+
+.WhoisShe {
+  padding-left: 50px;
+}
+/*for timeline*/
+
+#timeline, .tl-event h4, .tl-event p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.vl {
+    border-left: 8px solid #f4af41;
+    height: 700px;
+    left: 49.8%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+}
+
+.tl-block{
+  width: 100%;
+}
+
+.tl-year{
+  background: white;
+  border-radius: 50%;
+  border: 6px solid #f4af41;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  z-index: 5;
+}
+
+.tl-year div {
+  font-weight: bold;
+  display: block;
+  padding-top: 4px;
+}
+
+.tl-event > div {
+  width: 480px;
+  position: relative;
+}
+
+.tl-event div div {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tl-event div div:hover {
+  animation: bounceAround 0.5s ease-in-out;
+}
+
+tl-event div.event-l{
+float: left;
+
+}
+
+div.event-r{
+  float: right;
+
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid white;
+}
+
+.tip-left {
+  top: 40px;
+  left: -18px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.tip-right {
+  top: 40px;
+  left: 478px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*for SkillSet*/
+
+.row {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.col-4 {
+  width: 30%;
+  height: 500px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: rgb(83, 86, 100);
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  padding: 0px 15px;
+}
+
+
+.skillBox {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.skillBox p{
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+div .percent-r {
+  float: right;
+  position: relative;
+  top: -30px;
+  font-size: 1rem;
+  color: #FFFFFF;
+
+}
+
+.skill{
+  background: #262626;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+
+
+.skill_level {
+  background: #FF0066;
+  width: 100%;
+  height: 10px;
+
+}
+
+
+footer{
+	text-align: center;
+	background-color: #f7f8f9;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+  z-index: 99;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+@keyframes bounceAround {
+  0% {transform:translateY(0px);}
+  50%{transform:translateY(10px);}
+  100%{transform:translateY(0px);}
+}
+
+@media (max-width: 750px) {
+.entiresitehead, .headtitle, .navheader{
+	display: none;
+}
+
+.menuIcon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 5px;
+}
+.dropbtn {
+ 	background-color: #ffffdd;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #4EADF6;
+}
+.menuIcon:hover {
+    background-color: black;
+}
+
+
+@media (max-width: 460px) {
+body {
+	font-size: 10px;
+}
+
+
+}
